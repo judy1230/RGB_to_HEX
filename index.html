@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+		integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	
+</head>
+
+<body>
+  <h1>RGB to HEX</h1>
+
+  <div id = RGB class="slidecontainer">
+		<div class="slideconcoller">
+	    <input type="range" min="0" max="255" value="255" class="slider_R" id="R" onchange="RGBChange()">
+	    <p>R: <span id="R_value"></span></p>
+		  <input type="range" min="0" max="255" value="234" class="slider_G" id="G"
+		  onchange="RGBChange()">
+	    <p>G: <span id="G_value"></span></p>
+		  <input type="range" min="0" max="255" value="123" class="slider_B" id="B"
+		  onchange="RGBChange()">
+		  <p>B: <span id="B_value"></span></p>
+		</div>
+		<h1 id="HEX_value" ></h1>	
+  </div>
+
+  <script src="index.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</body>
+
+</html>
